@@ -45,6 +45,7 @@ body{
 .header{
 	width: 100%;
 	height: 90px;
+	font-size: 20px;
 	background:rgba(0,0,0,.3);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);/*兼容IE8的rgba透明度*/
 }
@@ -121,11 +122,42 @@ body{
 	color: #fff;
 	background-color: #002449;
 }
+.footer .left{
+	height: 210px;
+}
+.footer .bottomNav{
+	width: 940px;
+	border-bottom: 1px solid #56c8fa;
+}
+.footer .bottomNav ul{
+	height: 104px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer .bottomNav ul li a{
+	color: #fff;
+	font-size: 20px;
+}
+.footer .copyright{
+	height: 105px;
+	line-height: 105px;
+	text-align: center;
+	font-size: 16px;
+}
+.footer .copyright span{
+	margin-left: 40px;
+}
 .footer .code {
 	float: right;
+	margin-top: 20px;
+}
+.footer .code img{
+	display: block;
 }
 .footer .code p{
 	text-align: center;
+	line-height: 40px;
 }
 
 /*清除浮动*/	
