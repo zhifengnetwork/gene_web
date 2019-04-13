@@ -1,0 +1,27 @@
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 9;
+}
+/* 轮播图 */
+.banner-wrap{
+    position: relative;
+}
+.banner-wrap img{
+    width: 100%;
+    display: block;
+}
+.banner-wrap .swiper-pagination span{
+    background-color: #fff;
+}
+.banner-wrap-zp .swiper-pagination span.swiper-pagination-bullet-active{
+    opacity: 1;
+}
+.swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 8px;
+}
+.swiper-pagination-bullet{
+    width: 12px;
+    height:12px;
+}
