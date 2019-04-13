@@ -34,6 +34,7 @@ input[type=button], input[type=submit], input[type=file], button {
 body{
 	background-color: #f5f5f5;
 }
+
 .inner-wrap{
 	width: 1200px;
 	margin: 0 auto;
@@ -42,6 +43,7 @@ body{
 
 /* 公共头部 */
 .header{
+	width: 100%;
 	height: 90px;
 	background:rgba(0,0,0,.3);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#7F000000,endColorstr=#7F000000);/*兼容IE8的rgba透明度*/
@@ -53,6 +55,8 @@ body{
 	background-color:#37afe6;
 	margin-right: 65px;
 }
+
+/* 导航 */
 .header .inner-wrap .nav{
 	float: left;
 }
@@ -64,15 +68,66 @@ body{
 .header .inner-wrap .nav li:last-child{
 	margin-right: 0;
 }
-.header .inner-wrap a{
+.header .inner-wrap .nav li a{
 	color: #ffffff;
 }
+.header .inner-wrap .nav li a:hover{
+	color: #37afe6;
+}
+.header .inner-wrap .nav li.active a{
+	color: #37afe6;
+}
+
+/* 登录状态 */
 .header .inner-wrap .login{
 	float: right;
 }
-.header .inner-wrap .login .login-out{
+
+/* 未登录状态 */
+.header .inner-wrap .login-out{
+	display: none;
+}
+.header .inner-wrap .login a{
+	margin-left: 15px;
+	color: #fff;
+}
+.header .inner-wrap .login a:hover{
+	color: #37afe6;
+}
+
+/* 登录状态 */
+.header .inner-wrap .login-in{
+	display: block;
+}
+.header .inner-wrap .login-in span{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	border-radius: 50%;
+	margin: 20px 0;
+}
+.header .inner-wrap .login-in span img{
+	width: 100%;
+}
+.header .inner-wrap .login-in a{
+	display: inline-block;
 	line-height: 90px;
 }
+
+/* 公共底部 */
+.footer{
+	width: 100%;
+	height: 210px;
+	color: #fff;
+	background-color: #002449;
+}
+.footer .code {
+	float: right;
+}
+.footer .code p{
+	text-align: center;
+}
+
 /*清除浮动*/	
 .clearfix:before{
 	display:block;
