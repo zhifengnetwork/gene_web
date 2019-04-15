@@ -1,0 +1,16 @@
+.content .order-wrap {
+	padding: 20px 0 25px 25px;
+	background: #fff;
+}
+.content .order-wrap .order .odd {
+	margin-bottom: 15px;
+	font-size: 24px;
+	color: #333;
+}
+.x_tu {
+	display: inline-block;
+	vertical-align: top;
+}
+.content .order-wrap .order .box_tu .img {
+	width: 200px;
+}
