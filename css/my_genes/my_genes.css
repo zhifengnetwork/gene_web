@@ -19,7 +19,8 @@ body{
     padding: 20px 20px 20px 0;
     box-sizing: border-box;
     position: fixed;
-    left:20%;
+    left:50%;
+    margin-left: -570px;
     top: 156px;
 }
 .siderNav h3{

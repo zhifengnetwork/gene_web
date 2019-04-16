@@ -22,5 +22,4 @@ var footer = (`
     </div>
 `);
 
-
-document.write(footer);
+$(".footer").html(footer);
