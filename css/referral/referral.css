@@ -1,4 +1,8 @@
-
+img {
+	display: block;
+	margin: 0 auto;
+	width: 100%;
+}
 .wrapper .content .ewm-wrap {
 	margin: 25px 0 35px;
 	height: 600px;
