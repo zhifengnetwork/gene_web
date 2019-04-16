@@ -4,17 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>首页</title>
+    <title class="pageTopTitle" page-id="0">首页</title>
     <link rel="stylesheet" href="../../css/public/swiper.css">
     <link rel="stylesheet" href="../../css/public/public.css">
     <link rel="stylesheet" href="../../css/home/index.css">
+    
 </head>
 <body>
     <div class="wrapper">
        <!-- 轮播图 -->
        <div class="swiper-container banner-wrap">
             <!-- 头部 -->
-            <script src="../../js/public/header.js"></script>
+            <div class="header"></div>
+            
             <div class="swiper-wrapper">
                 <div class="swiper-slide">
                     <img src="../../images/home/banner-img01.png">
@@ -156,12 +158,14 @@
         </div>
 
         <!-- 底部 -->
-        <script src="../../js/public/footer.js"></script>
+        <div class="footer"></div>
         
     </div>  
 
-    <script src="../../js/public/jquery-1.8.3.min.js"></script>    
+    <script src="../../js/public/jquery-1.8.3.min.js"></script>   
     <script src="../../js/public/swiper.js"></script>
+    <script src="../../js/public/header.js"></script>  
+    <script src="../../js/public/footer.js"></script>
     <script>
         var swiper = new Swiper('.banner-wrap', {
             loop:true,
