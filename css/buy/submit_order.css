@@ -131,3 +131,17 @@ input::-webkit-inner-spin-button {
     height: 50px;
     cursor: pointer;
 }
+
+.shipping {
+	margin-bottom: 30px;
+    padding: 30px;
+    background-color: #fff;
+    border: 1px solid #eceff1;
+    border-radius: 4px;
+}
+.shipping ul li div {
+	display: inline-block;
+}
+.form-control {
+	padding: 6px;
+}
