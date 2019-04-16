@@ -35,6 +35,7 @@ var header = (
             </div>
             <div class="nav">
 <<<<<<< HEAD
+<<<<<<< HEAD
                 <ul>`+ NavdStr +`</ul>
 =======
                 <ul>
@@ -46,6 +47,9 @@ var header = (
                     <li><a href="../about/about.html">关于我们</a></li>
                 </ul>
 >>>>>>> b650eeeb69340ff2a64c10a85219bf851e754242
+=======
+                <ul>`+ NavdStr +`</ul>
+>>>>>>> 5ade8501ed38e872abd9695a0cbdd11e5d8c60bf
             </div>
             <div class="login">
                 <!-- 未登录状态 -->
