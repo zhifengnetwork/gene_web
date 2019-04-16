@@ -97,7 +97,16 @@
 	
 }
 
+<<<<<<< HEAD
 
+=======
+.yanzhengma{
+	
+	width: 60px;
+	height: 30px;
+	
+}
+>>>>>>> ade1f76a123964dcfdfa96755f4f7720c4eaed70
 .divdiv11{
 	
 	
@@ -111,6 +120,7 @@
 	
 }
 .divdiv11 img{
+<<<<<<< HEAD
 	
 	width: 60px;
 	height: 50px;
@@ -120,6 +130,11 @@
 	margin-left: 10px;
 	/*border:1px solid green;*/
 	
+=======
+	position: absolute;
+	bottom: 0px;
+	margin-left: 10px;
+>>>>>>> ade1f76a123964dcfdfa96755f4f7720c4eaed70
 
 }
 
@@ -149,7 +164,10 @@
 .weixin_ear img{
 	
 	width: 30px;
+<<<<<<< HEAD
 	height: 40px;
+=======
+>>>>>>> ade1f76a123964dcfdfa96755f4f7720c4eaed70
 	
 }
 .weixin_ear p{
