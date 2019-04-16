@@ -13,7 +13,7 @@ var NavUrl = [
     "../home/index.html",
     "../my_genes/my_genes.html",
     "../buy/buy.html",
-    "../my_genes/my_genes.html",
+    "../referral/referral.html",
     "../order/order.html",
     "../about/about.html",
 ];
