@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title class="pageTopTitle" page-id="2">购买</title>
+		<link rel="stylesheet" type="text/css" href="../../css/public/public.css"/>
+		<link rel="stylesheet" type="text/css" href="../../css/buy/submit_order.css"/>
+	</head>
+	<body>
+		<div class="wrapper">
+			<!--头部-->
+			<div class="header"></div>
+			<!--内容-->
+			<div class="content inner-wrap">
+				<!--图片，增加数量区-->
+				<div class="print-wrap">
+					<!--左边-->
+					<div class="left_tu">
+						<div class="img">
+							<img src="../../images/buy/chanpin2.png"/>
+						</div>
+						
+						<h2>WeGene 检测标准版 2.0</h2>
+						<div class="color-blue">￥ 499.00</div>
+						
+						<div class="and">
+							<span class="minus us" id="jian">-</span>
+							<input class="inp" id="ku" type="number" value="1"/>
+							<span class="plus us" id="jia">+</span>
+						</div>
+					</div>
+					<!--右边-->
+					<div class="right_zi">
+						<!--地址-->
+						<div class="site">
+							<div>地址：</div>
+						</div>
+						<!--支付方式-->
+						<div class="payment">
+							<div class="mode">支付方式：</div>
+							<!--微信支付-->
+							<div class="pay">
+								<img src="../../images/buy/pay-wechat.png" />
+							</div>
+						</div>
+						<!--总计，运费-->
+						<div class="total-wrap">
+							<div class="clearfix">
+								<div class="pull-left">总计：￥499.00</div>
+								<div class="pull-right">应付: <b>￥499.00</b><a class="btn-submit">提交订单</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--底部-->
+			<div class="footer"></div>
+		</div>
+		
+		<script type="text/javascript" src="../../js/public/jquery-1.8.3.min.js" ></script>
+		<script type="text/javascript" src="../../js/public/header.js" ></script>
+		<script type="text/javascript" src="../../js/public/footer.js" ></script>
+		<script>
+			//数量增加减少
+			var Jian = document.getElementById('jian');
+		    var Ku = document.getElementById('ku');
+		    var Jia = document.getElementById('jia');
+			       
+		    Jia.onclick = function () {
+		    	if (Ku.value >= 100) {
+		    		return;
+		    	} else {
+		    	Ku.value = parseInt(Ku.value)+1;
+		    	}
+		    }
+		    
+		   	Jian.onclick = function () {
+		   	   if (Ku.value <= 0) {
+		   	   	return;
+		    	} else {
+		   	   Ku.value = parseInt(Ku.value)-1;
+		   	  }
+		    }
+		</script>
+	</body>
+</html>
