@@ -6,10 +6,10 @@ var header = (`
             </div>
             <div class="nav">
                 <ul>
-                    <li class="active"><a href="./index.html">首页</a></li>
+                    <li class="active"><a href="../home/index.html">首页</a></li>
                     <li><a href="../my_genes/my_genes.html">我的基因</a></li>
                     <li><a href="../buy/buy.html">购买</a></li>
-                    <li><a href="../my_genes/my_genes.html">基因介绍</a></li>
+                    <li><a href="../referral/referral.html">基因介绍</a></li>
                     <li><a href="../order/order.html">我的订单</a></li>
                     <li><a href="../about/about.html">关于我们</a></li>
                 </ul>
