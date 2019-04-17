@@ -48,7 +48,7 @@
 		<div class="login_ear">
 			
 			
-			<p style="text-align: center;font-size: 20px;padding-top: 10px;padding-bottom: 10px;border: 1px solid red;">个人中心</p>
+			<p style="text-align: center;font-size: 20px;padding-top: 10px;padding-bottom: 10px;">个人中心</p>
 			<!--更换头像-->
 			<div class="lj_wrap">
 		<!--渲染wrpa-->
@@ -91,21 +91,22 @@
 					<input type="password" value="123123" style="color: gray;border: none;background-color:white;"  disabled="disabled" class="yiqian_mima"/>
 					<span style="color: rgb(55,175,230); cursor: pointer;float: right;padding-right: 10px;" class="xiugai_mima">修改密码</span>
 					<span style="display: none;" class="queren_xiugai" >
-					<input type="text" style="width: 100px;"/>
+					<input type="text" style="width: 150px;" class="xinmima"/>
 					<span style="cursor: pointer;background: #CCCCCC;padding: 0px 10px;margin-right:10px;" class="queren1">确认</span><span style="cursor: pointer;background: #CCCCCC;padding: 0px 10px;margin-right:10px;" class="quxiao1">取消</span>	
 					</span>
+									
+				</div>
+				
+				<div style="text-align: center;background:#BCEAFF;height: 160px;border-radius: 10px; position: relative;margin-top: 30px;">
 					
+					<div style="position: absolute;top: 50%;left:50%;transform: translate(-50%,-50%);">
+					<p style="font-size: 25px;">账户余额</p>
+					<p style="color: red;font-size: 30px;">￥999.9</p>
+					<p style="font-size: 20px;">优惠券10张</p>
+					</div>
 					
 				</div>
-				<div class="personal_div">
-					
-					<label style="padding-left: 10px;" class="label1">手机号</label>
-					<!--<span style="color: rgb(55,175,230);">更换密码</span>-->
-					<!--<input type="text" />
-					<span style="cursor: pointer;background: #CCCCCC;padding: 0px 10px;margin-right:10px ;">确认</span><span style="cursor: pointer;background: #CCCCCC;padding: 0px 10px;margin-right:10px;">取消</span>-->
-					<span style="color: rgb(55,175,230); cursor: pointer;float: right;padding-right: 10px;">验证手机</span>					
-					
-				</div>
+				
 				
 				
 				
@@ -119,9 +120,11 @@
 		
 		
 		
-		
 	</div>
-	<!--<script src="../../js/public/footer.js"></script>-->
+	<div class="footer" >
+			
+		</div>
+		<script src="../../js/public/footer.js"></script>
 </div>
 
 	 <script>
@@ -187,18 +190,19 @@
        	      $('.xiugai_mima').show();
        	      $(".queren_xiugai").hide();
        	      $('.yiqian_mima').show();
+       	      var xinmima=$('.xinmima').val()
+       	      $('.yiqian_mima').val(xinmima)
+       	      
        	      
        	
        	
        })
        $(".quxiao1").click(function(){
-       	
        	      $('.xiugai_mima').show()
        	      $(".queren_xiugai").hide()
-       	      $('.yiqian_mima').show();
-       	
-       	
+       	      $('.yiqian_mima').show();   	
        })
+      
        
 		
 		
