@@ -1,8 +1,10 @@
 .inner-wrap22{
 	
 	background: white;
-	margin-top: 50px;
-	height: 700px;
+	margin-top: 80px;
+	height: 580px;
+	padding-top: 60px;
+	margin-bottom: 60px;
 	
 }
 .lj_wrap{width: 6.9rem;margin: 0 auto;}
@@ -32,7 +34,7 @@
    width: 550px;
    height: 350px;
    margin: auto;
-   border: 1px solid green;	
+   /*border: 1px solid green;*/	
    margin-top: 60px;
    left: 50%;
    transform: translate(-50%,0);
@@ -47,8 +49,8 @@
 }
 .personal_div{
 	
-	height: 38px;
-	line-height: 38px;
+	height: 58px;
+	line-height: 58px;
 	border-bottom: 1px solid #CCCCCC;
 	font-size: 15px;
 
