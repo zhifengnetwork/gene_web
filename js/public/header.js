@@ -28,25 +28,24 @@ for(var i = 0; i < NavTitle.length; i++) {
 
 // 渲染页面
 var header = (
-    `<div class="header">
-        <div class="inner-wrap">
-            <div class="logo">
-                <a href="index.html"></a>
+    `
+    <div class="inner-wrap">
+        <div class="logo">
+            <a href="index.html"></a>
+        </div>
+        <div class="nav">
+            <ul>`+ NavdStr +`</ul>
+        </div>
+        <div class="login">
+            <!-- 未登录状态 -->
+            <div class="login-out">
+                <a href="../login/login.html">登录</a>
+                <a href="../register/register.html">注册</a>
             </div>
-            <div class="nav">
-                <ul>`+ NavdStr +`</ul>
-            </div>
-            <div class="login">
-                <!-- 未登录状态 -->
-                <div class="login-out">
-                    <a href="../login/login.html">登录</a>
-                    <a href="../register/register.html">注册</a>
-                </div>
-                <!-- 登录状态 -->
-                <div class="login-in">
-                    <span class="fl"><img src="../../images/public/user-avatar.png"></span>
-                    <a class="fl" href="javascript:void(0)">退出</a>
-                </div>
+            <!-- 登录状态 -->
+            <div class="login-in">
+                <span class="fl"><img src="../../images/public/user-avatar.png"></span>
+                <a class="outBtn fl" href="javascript:void(0)">退出</a>
             </div>
         </div>
     </div>

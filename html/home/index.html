@@ -147,13 +147,13 @@
                         <h1>已有基因数据？</h1>
                         <p>Y - STR数据<br />检测对比报告</p>
                     </div>
-                    <a href="javascript:void(0)" class="btn">导入数据</a>
+                    <a href="./import_data.html" class="btn">导入数据</a>
                 </div>
                 <div class="gene-item">
                     <div class="text">
                         <h1>需要检查基因</h1>
                     </div>
-                    <a href="#" class="btn">立即购买</a>
+                    <a href="../buy/buy.html" class="btn">立即购买</a>
                 </div>
             </div>
         </div>
@@ -168,6 +168,9 @@
     <script src="../../js/public/header.js"></script>  
     <script src="../../js/public/footer.js"></script>
     <script>
+        /*
+        * 轮播图
+        */
         var swiper = new Swiper('.banner-wrap', {
             loop:true,
             pagination: '.swiper-pagination',
@@ -175,6 +178,13 @@
             autoplay: 3000,
             autoplayDisableOnInteraction: false
         });
+
+        // 退出登录
+        $(".outBtn").click(function(){
+            $(".login-in").hide();
+            $(".login-out").show();
+        })
+
     </script>
 </body>
 </html>
