@@ -37,7 +37,7 @@ body{
 .inner-wrap{
 	width: 1200px;
 	margin: 0 auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
 }
 
 /* 公共头部 */

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title class="pageTopTitle" page-id="0">首页</title>
+    <link rel="stylesheet" href="../../css/public/swiper.css">
+    <link rel="stylesheet" href="../../css/public/public.css">
+    <link rel="stylesheet" href="../../css/home/index.css">
+    
+</head>
+<body>
+    <div class="wrapper" style="min-width: 1200px;">
+    <!--<div class="wrapper" style="width: 100%;">-->
+       <!-- 轮播图 -->
+       <div class="swiper-container banner-wrap" style="min-width: 1200px;">
+            <!-- 头部 -->
+            <div class="header"></div>
+            
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../../images/home/banner-img01.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../images/home/banner-img01.png">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../../images/home/banner-img01.png">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>  
+        
+        
+        
+    </div>  
+
+    <script src="../../js/public/jquery-1.8.3.min.js"></script>   
+    <script src="../../js/public/swiper.js"></script>
+    <script src="../../js/public/header.js"></script>  
+    <script src="../../js/public/footer.js"></script>
+    <script>
+        var swiper = new Swiper('.banner-wrap', {
+            loop:true,
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            autoplay: 3000,
+            autoplayDisableOnInteraction: false
+        });
+    </script>
+</body>
+</html>
