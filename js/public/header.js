@@ -44,8 +44,8 @@ var header = (
             </div>
             <!-- 登录状态 -->
             <div class="login-in">
-                <span class="fl"><img src="../../images/public/user-avatar.png"></span>
-                <a class="outBtn fl" href="javascript:void(0)">退出</a>
+                <a href="../personal/personal.html"><span class="fl"><img src="../../images/public/user-avatar.png"></span></a>
+                <a class="outBtn fr" href="javascript:void(0)">退出</a>
             </div>
         </div>
     </div>
@@ -55,3 +55,9 @@ $(".header").html(header)
 // 更换当前状态
 var thisInd = Number($.trim($('.pageTopTitle').attr('page-id')));
 $(".nav li").eq(thisInd).addClass('active').siblings().removeClass('active')
+
+// 退出登录
+$(".outBtn").click(function(){
+    $(".login-in").hide();
+    $(".login-out").show();
+})
