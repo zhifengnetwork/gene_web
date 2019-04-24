@@ -68,15 +68,18 @@
                             文件：
                         </div>
                         <div class="groupr upload">
-                            <a href="javascript:void(0)">点击选择压缩文件</a>
-                            <input type="file" class="selectFile">
+                            <a href="javascript:void(0)" class="check_zip">点击选择压缩文件</a>
+                            <!--<input type="file" class="selectFile" onchange="checkField()">-->
+                              <input type="file" name="myfile" id="myfile" value="" onchange="checkField()" class="selectFile"/>
+                            	<img src="../../images/home/shibai.png" class="cuo_pic" />
+                            	<img src="../../images/home/dui_pic.png" class="dui_pic" />
                             <p class="tips">请直接上传您从测序厂商获取的原始.Zip文件</p>
-                            <p class="tips success" style="display:none;">上传成功</p>
-                            <p class="tips fail" style="display:none;">上传失败</p>
+                            <!--<p class="tips success" style="display:none;">上传成功</p>
+                            <p class="tips fail" style="display:none;">上传失败</p>-->
                         </div>
                     </div>
                     <div class="btn">
-                        <button type="button">确认</button>
+                        <button type="button" onclick="window.location.href='./chaxun_shuju.html'">确认</button>
                     </div>
                 </form>
             </div>
@@ -92,6 +95,8 @@
     <script src="../../js/public/footer.js"></script>
     <script src="../../js/public/selectDate.js"></script>
     <script>
+    	var myfile = document.getElementById('myfile');
+    	var check_zip=document.getElementsByClassName("check_zip")
     	$(function(){
 			$("#date").selectDate()
 			
@@ -103,6 +108,41 @@
 			})
 			
         })
+    	
+    	function checkField(){
+    		
+          //上传文件成功和失败
+          //获取文件上传文件的文件名和扩展名
+         if(myfile.files[0] == undefined){
+         	
+//				alert('未上传文件！');
+//			    alert($(".check_zip").html());
+			    $(".check_zip").html("导入失败")
+			    $(".check_zip").css("background-color","red")
+			    $(".dui_pic").hide()
+			    $(".cuo_pic").show()
+			    
+				
+			}
+         else{
+         	
+         	  $(".check_zip").html("导入完成")
+			  $(".check_zip").css("background-color","#00FF00")
+			  $(".cuo_pic").hide()
+         	  $(".dui_pic").show()
+         	  var filevalue = myfile.value;
+         	 
+         	
+         	
+         }
+		
+    	}
+    	
+    	
+    	
+    	
+    	
+    	
         </script>
 </body>
 </html>
