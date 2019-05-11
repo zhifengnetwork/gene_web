@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title class="pageTopTitle" page-id="0">导入数据</title>
+    <link rel="stylesheet" href="../../css/public/swiper.css">
+    <link rel="stylesheet" href="../../css/public/public.css">
+    <link rel="stylesheet" href="../../css/home/biaoge_bianji.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <!-- 头部 -->
+        <div class="header"></div>
+         
+           <!-- 内容 -->
+          <div class="content inner-wrap">
+         
+            
+                 <div class="l3h5">
+					<div class="l3h5d">
+						<ul class="xiala ">
+							
+							<li style="width: 100%;font-size: 20px;">结果报告</li>
+							
+						</ul>
+						<ul class="xiala ">
+							
+							<li style="width: 100%;font-size: 20px;">姓名</li>
+							
+						</ul>
+						
+						<ul class="xiala ">
+							
+							<li style="width: 100%;font-size: 20px;">29Y-STR基因座分型结果</li>
+							
+						</ul>
+						<ul class="xiala">
+							
+							<li>基因座/样本号</li>
+							<li>频度</li>
+						</ul>
+						<ul class="xiala">
+							
+							<li><input type="text" value="DYS458"/></li>
+							<li><input type="text" /></li>
+						</ul>
+						<ul class="xiala">
+							
+							<li><input type="text" value="DYS458"/></li>
+							<li><input type="text" /></li>
+						</ul>
+						<ul class="xiala">
+							
+							<li><input type="text" value="DYS4587898"/></li>
+							<li><input type="text" /></li>
+						</ul>
+						<ul class="xiala">
+							
+							<li><input type="text" value="DYS458987898"/></li>
+							<li><input type="text" /></li>
+						</ul>
+						<ul class="xiala">
+							
+							<li><input type="text" /></li>
+							<li><input type="text" /></li>
+						</ul>
+						
+					</div>	
+				
+					
+		        </div>
+		        <p class="add">添加一行</p>
+	  
+         
+          </div> 
+
+        <!-- 底部 -->
+        <div class="footer"></div>
+        
+    </div>  
+
+    <script src="../../js/public/jquery-1.8.3.min.js"></script> 
+    <script src="../../js/public/header.js"></script>  
+    <script src="../../js/public/footer.js"></script>
+    <script src="../../js/public/selectDate.js"></script>
+    <script>
+    	var myfile = document.getElementById('myfile');
+    	var check_zip=document.getElementsByClassName("check_zip")
+    	$(function(){
+			$("#date").selectDate()
+			
+			$("#days").focusout(function(){
+				var year = $("#year option:selected").html()
+				var month = $("#month option:selected").html()
+				var day = $("#days option:selected").html()
+				console.log(year+month+day)
+			})
+			
+        })
+    	
+    	function checkField(){
+    		
+          //上传文件成功和失败
+          //获取文件上传文件的文件名和扩展名
+         if(myfile.files[0] == undefined){
+         	
+//				alert('未上传文件！');
+//			    alert($(".check_zip").html());
+			    $(".check_zip").html("导入失败")
+			    $(".check_zip").css("background-color","red")
+			    $(".dui_pic").hide()
+			    $(".cuo_pic").show()
+			    
+				
+			}
+         else{
+         	
+         	  $(".check_zip").html("导入完成")
+			  $(".check_zip").css("background-color","#00FF00")
+			  $(".cuo_pic").hide()
+         	  $(".dui_pic").show()
+         	  var filevalue = myfile.value;
+         	 
+         	
+         	
+         }
+		
+    	}
+    	$(".add").click(function(){
+    		
+    		
+    		$(".l3h5d").append('<ul class="xiala"><li><input type="text"/></li><li><input type="text"/></li></ul>')
+    		
+    		
+    		
+    	})
+    	
+    	
+    	
+    	
+    	
+    	
+        </script>
+</body>
+</html>

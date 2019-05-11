@@ -62,7 +62,7 @@
 .gene-data .upload{
     position: relative;
 }
-.check_zip{
+.gene-data .upload a{
     width: 400px;
     height: 40px;
     line-height: 40px;
@@ -75,14 +75,6 @@
     
     
     
-}
-.downloadss{
-	
-	
-	float: right;
-	margin-bottom: .5rem;
-	
-	
 }
 .cuo_pic,.dui_pic{
 	
