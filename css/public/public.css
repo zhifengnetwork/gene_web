@@ -118,6 +118,11 @@ body{
 	display: inline-block;
 	line-height: 50px;
 }
+.header .inner-wrap .logo img{
+	
+	width: 108px;
+	height: 100%;
+}
 
 /* 公共底部 */
 .footer{
